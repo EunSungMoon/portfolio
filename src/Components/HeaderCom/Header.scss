@@ -5,8 +5,12 @@
 
 #header {
   padding: 25px 15px;
-  background: $main-color;
+  background: #484978;
   color: $yellow-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 
   .headerInner {
     @include display(space-between);
@@ -19,6 +23,16 @@
       margin-bottom: 0;
       font-weight: 500;
       font-size: 20px;
+      li {
+        &:hover {
+          color: $yellowHover-color;
+        }
+      }
+    }
+    .hamburger {
+      &:hover {
+        color: $yellowHover-color;
+      }
     }
   }
 }
@@ -28,8 +42,8 @@
 반응형
 
 ***********************************************************/
-@media (min-width:300px) {
-  .headerInner{
+@media (min-width: 300px) {
+  .headerInner {
     flex-direction: column;
   }
   .tabName {
@@ -58,7 +72,7 @@
 }
 
 @include media-breakpoint-up(lg) {
-  .headerInner{
+  .headerInner {
     flex-direction: inherit;
   }
   .tabName {
