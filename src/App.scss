@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap');
+@import "~bootstrap/scss/bootstrap";
+//Roboto(400, 500, 700, 900)
+//Noto Sans Korean(300, 400, 500, 700, 900)
+//Nanum Myeongjo(400, 700, 800)
+body {
+  font-family: 'Noto Sans Korean', 'Roboto';
+}

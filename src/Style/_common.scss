@@ -1,0 +1,7 @@
+@mixin display($effect) {
+  display: flex;
+  align-items: center;
+  justify-content: $effect;
+}
+$main-color:#6667ab;
+$yellow-color:#fff3cf;
