@@ -12,6 +12,21 @@
     text-align: center;
     .h1 {
       font-family: "Do Hyeon";
+      margin-bottom: 30px;
+    }
+    .moreBtn{
+      border-radius: 16px;
+      border: none;
+      background: $yellow-color;
+      color: $main-color;
+      width: 150px;
+      height: 48px;
+      line-height: 48px;
+      font-weight: bold;
+
+      &:hover {
+        background: $yellowHover-color;
+      }
     }
   }
 }
