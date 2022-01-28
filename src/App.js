@@ -1,17 +1,16 @@
 import './App.scss';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './Components/HeaderCom/Header';
+import Main from './Components/MainCom/Main';
 
 
 function App() {
   return (
-    <BrowserRouter>
     <div className="App">
       <div className='containter-fluid'>
         <Header />
+        <Main />
       </div>
     </div>
-    </BrowserRouter>
   );
 }
 

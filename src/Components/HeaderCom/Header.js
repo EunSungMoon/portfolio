@@ -14,7 +14,7 @@ export default function Header() {
   return (
     <header id="header">
       <div className="headerInner container">
-        <h1 className='h1'>Moon's Portfolio</h1>
+        <div className='h1'>Moon's Portfolio</div>
         <nav>
           <ol className={`tabName ${hambuger ? '' : 'active'}`}>
             <li>About me</li>
