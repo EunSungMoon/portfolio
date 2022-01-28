@@ -5,7 +5,13 @@
 
 #aboutme {
   position: relative;
-  padding: 120px 0;
+  padding: 140px 0 120px;
   background: $main-color;
   color: $yellow-color;
+  .aboutmeWrap {
+    text-align: center;
+    .h1 {
+      font-family: "Do Hyeon";
+    }
+  }
 }

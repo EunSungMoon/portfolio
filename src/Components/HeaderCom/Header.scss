@@ -4,9 +4,7 @@
 @import "~bootstrap/scss/mixins";
 
 .header {
-  background: $main-color;
   padding: 25px 15px;
-  color: $yellow-color;
   position: fixed;
   top: 0;
   left: 0;
@@ -24,11 +22,6 @@
       margin-bottom: 0;
       font-weight: 500;
       font-size: 20px;
-      li {
-        &:hover {
-          color: $yellowHover-color;
-        }
-      }
     }
     .hamburger {
       &:hover {
@@ -38,20 +31,19 @@
   }
 }
 
-.headerScoll{
-  background: $yellow-color;
-  color: $deepMain-color;
-  li {
-    &:hover {
-      color: red;
-    }
-  }
+.headerScoll {
+  background: $yellow-color !important;
+  color: $main-color !important;
 }
 
 /**********************************************************
 반응형
 ***********************************************************/
 @media (min-width: 250px) {
+  .header{
+    background: $yellow-color;
+    color: $main-color;
+  }
   .headerInner {
     flex-direction: column;
   }
@@ -61,6 +53,9 @@
     li {
       height: 30px;
       margin-bottom: 10px;
+      &:hover{
+        color: $yellowHover-color;
+      }
     }
   }
   .hamburger {
@@ -81,6 +76,10 @@
 }
 
 @include media-breakpoint-up(lg) {
+  .header{
+    background: $main-color;
+    color: $yellow-color;
+  }
   .headerInner {
     flex-direction: inherit;
   }
@@ -96,6 +95,9 @@
       width: 120px;
       height: 100%;
       margin-bottom: 0;
+      &:hover {
+        color: $yellowHover-color;
+      }
     }
   }
   .hamburger {
