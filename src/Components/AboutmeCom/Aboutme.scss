@@ -1,0 +1,11 @@
+@import "src/Style/_common";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+#aboutme {
+  position: relative;
+  padding: 120px 0;
+  background: $main-color;
+  color: $yellow-color;
+}

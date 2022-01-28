@@ -1,18 +1,24 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Header.scss';
 import { HiMenu } from "react-icons/hi";
 
 export default function Header() {
-  const [hambuger, setHamburger] = useState(true)
+  const [hambuger, setHamburger] = useState(true);
+  const [scrollPosition, setScrollPosition] = useState(0)
 
   const handleHamburger = e => {
-    console.log(e.target)
-    console.log(hambuger)
     setHamburger(!hambuger)
   }
 
+  const handleScrollHeader = () => {
+    setScrollPosition(window.scrollY|| document.documentElement.scrollTop)
+  }
+  useEffect(()=>{
+    window.addEventListener('scroll', handleScrollHeader)
+  })
+
   return (
-    <header id="header">
+    <header id="header" className={`header ${scrollPosition ? 'headerScoll' : ''}`}>
       <div className="headerInner container">
         <div className='h1'>Moon's Portfolio</div>
         <nav>

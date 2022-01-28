@@ -3,9 +3,9 @@
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
-#header {
+.header {
+  background: $main-color;
   padding: 25px 15px;
-  background: #484978;
   color: $yellow-color;
   position: fixed;
   top: 0;
@@ -38,10 +38,20 @@
   }
 }
 
+.headerScoll{
+  background: $yellow-color;
+  color: $deepMain-color;
+  li {
+    &:hover {
+      color: red;
+    }
+  }
+}
+
 /**********************************************************
 반응형
 ***********************************************************/
-@media (min-width: 300px) {
+@media (min-width: 250px) {
   .headerInner {
     flex-direction: column;
   }
