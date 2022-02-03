@@ -26,8 +26,8 @@
         padding: 25px;
         border-radius: 15px;
         margin-bottom: 20px;
-        margin-right: 20px;
-        width: 350px;
+
+
         .img{
           background-size: cover;
           width: 100%;
@@ -42,6 +42,10 @@
 @media (min-width: 250px) {
   .stackContainer {
     flex-flow: column wrap;
+    .stackWrap{
+      width: 250px;
+      margin-right: 0;
+    }
   }
 }
 
@@ -54,5 +58,9 @@
 @include media-breakpoint-up(lg) {
   .stackContainer {
     flex-flow: inherit;
+    .stackWrap{
+      width: 350px;
+      margin-right: 20px;
+    }
   }
 }
