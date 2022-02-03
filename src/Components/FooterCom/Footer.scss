@@ -1,0 +1,15 @@
+@import "src/Style/_common";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+#footer{
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  p{
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+}

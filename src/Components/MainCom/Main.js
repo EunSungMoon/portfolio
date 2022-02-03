@@ -2,6 +2,7 @@ import Project from '../ProjectCom/Project'
 import './Main.scss'
 import Aboutme from '../AboutmeCom/Aboutme';
 import Skills from '../SkillsCom/Skills';
+import Timeline from '../TimelineCom/Timeline';
 
 export default function Main() {
   return (
@@ -9,6 +10,7 @@ export default function Main() {
       <Aboutme />
       <Skills />
       <Project />
+      <Timeline />
     </main>
   )
 }

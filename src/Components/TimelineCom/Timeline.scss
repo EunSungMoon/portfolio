@@ -3,16 +3,14 @@
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
-#project{
-  background: $purple-color;
-  .projectWrap{
+#timeline{
+  background: #a6a7b9;
+  .timelineWrap{
     padding: 70px 0;
     .titleWrap{
       h1{
         @include title;
-        color: #fff;
       }
     }
   }
-
 }
