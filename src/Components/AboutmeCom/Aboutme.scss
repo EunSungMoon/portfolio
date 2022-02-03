@@ -4,10 +4,12 @@
 @import "~bootstrap/scss/mixins";
 
 #aboutme {
-  position: relative;
   padding: 140px 0 120px;
   background: $main-color;
   color: $yellow-color;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
   .aboutmeWrap {
     text-align: center;
     .h1 {
