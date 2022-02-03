@@ -1,0 +1,58 @@
+@import "src/Style/_common";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+#skills {
+  background: $lightpurple-color;
+  .skillsWrap {
+    padding: 70px 0;
+    .titleWrap {
+      h1 {
+        text-align: center;
+        font-size: 50px;
+        font-family: "Do Hyeon";
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+    }
+    .stackContainer {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-around;
+      align-content: space-around;
+      .stackWrap {
+        background: #fff;
+        padding: 25px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        width: 350px;
+        .img{
+          background-size: cover;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+/**********************************************************
+반응형
+***********************************************************/
+@media (min-width: 250px) {
+  .stackContainer {
+    flex-flow: column wrap;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .stackContainer {
+    flex-flow: column wrap;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .stackContainer {
+    flex-flow: inherit;
+  }
+}
