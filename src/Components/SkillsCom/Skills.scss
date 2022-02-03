@@ -26,8 +26,17 @@
         padding: 25px;
         border-radius: 15px;
         margin-bottom: 20px;
-
-
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+        transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
+        &:hover {
+          transform: translateY(-4px);
+        }
+        .h2{
+          font-size: 26px;
+          color: #333;
+          border-bottom: 2px solid #E7EAF1;
+          padding-bottom: 10px;
+        }
         .img{
           background-size: cover;
           width: 100%;
@@ -37,7 +46,9 @@
   }
 }
 /**********************************************************
+
 반응형
+
 ***********************************************************/
 @media (min-width: 250px) {
   .stackContainer {
