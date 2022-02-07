@@ -3,105 +3,51 @@
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
-.header {
-  padding: 25px 15px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-
-  .headerInner {
-    @include display(space-between);
-    .h1 {
-      margin: 0;
-      font-family: "Do Hyeon";
-    }
-    .tabName {
-      list-style: none;
-      padding-left: 0;
-      margin-bottom: 0;
-      font-weight: 500;
-      font-size: 20px;
-    }
-    .hamburger {
-      &:hover {
-        color: $gray-color;
-      }
+#header {
+  .logo,
+  .nav-name {
+    font-family: "Do Hyeon";
+  }
+  .nav-link{
+    &:hover {
+      color: $gray-color;
     }
   }
 }
 
-.headerScoll {
+.headerScroll {
   background: $yellow-color !important;
   color: $main-color !important;
+  .logo,
+  .nav-link {
+    color: $main-color !important;
+  }
+  .nav-link{
+    &:hover {
+      color: $gray-color !important;
+    }
+  }
 }
 
-/**********************************************************
-반응형
-***********************************************************/
 @media (min-width: 250px) {
-  .header{
+  #header {
     background: $yellow-color;
-    color: $main-color;
-  }
-  .headerInner {
-    flex-direction: column;
-  }
-  .tabName {
-    display: none;
-    margin-top: 25px;
-    li {
-      height: 30px;
-      margin-bottom: 10px;
-      &:hover{
-        color: $gray-color;
-      }
+    .logo,
+    .nav-link {
+      color: $main-color;
+    }
+    .navbar-toggler{
+      color: $main-color;
+      border-color: $main-color;
     }
   }
-  .hamburger {
-    font-size: 40px;
-    position: absolute;
-    top: 8px;
-    right: 25px;
-  }
-  .active {
-    display: block;
-  }
 }
-
-@include media-breakpoint-up(sm) {
-  .hamburger {
-    top: 12px;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  .header{
+@include media-breakpoint-up(md) {
+  #header {
     background: $main-color;
-    color: $yellow-color;
-  }
-  .headerInner {
-    flex-direction: inherit;
-  }
-  .tabName {
-    @include display(space-between);
-    padding: 0;
-    margin: 0;
-    height: 50px;
-    line-height: 50px;
-
-    li {
-      text-align: center;
-      width: 120px;
-      height: 100%;
-      margin-bottom: 0;
-      &:hover {
-        color: $gray-color;
-      }
+    .logo,
+    .nav-link {
+      color: $yellow-color;
     }
-  }
-  .hamburger {
-    display: none;
   }
 }
