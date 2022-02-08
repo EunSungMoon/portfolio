@@ -25,16 +25,16 @@ export default function Header() {
           <Navbar.Collapse id='responsive-navbar-nav'>
             <Nav className='nav-justified w-100 nav-fill nav-name'>
               <Navbar.Text className='nav-link'>
-                <Link to='aboutme' spy={true} smooth={true} offset={-80} duration={300}>About me</Link>
+                <Link to='aboutme' spy={true} smooth={true} offset={-90} duration={300}>About me</Link>
               </Navbar.Text>
               <Navbar.Text className='nav-link'>
-                <Link to='skills' spy={true} smooth={true} offset={-80} duration={300}>Skills</Link>
+                <Link to='skills' spy={true} smooth={true} offset={-90} duration={300}>Skills</Link>
               </Navbar.Text>
               <Navbar.Text className='nav-link'>
-                <Link to='project' spy={true} smooth={true} offset={-80} duration={300}>Project</Link>
+                <Link to='project' spy={true} smooth={true} offset={-90} duration={300}>Project</Link>
               </Navbar.Text>
               <Navbar.Text className='nav-link'>
-                <Link to='timeline' spy={true} smooth={true} offset={0} duration={300}>Timeline</Link>
+                <Link to='timeline' spy={true} smooth={true} offset={-90} duration={300}>Timeline</Link>
               </Navbar.Text>
             </Nav>
           </Navbar.Collapse>

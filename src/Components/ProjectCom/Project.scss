@@ -3,16 +3,72 @@
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
-#project{
+#project {
   background: $purple-color;
-  .projectWrap{
+  .projectWrap {
     padding: 70px 0;
-    .titleWrap{
-      h1{
+    .titleWrap {
+      h1 {
         @include title;
         color: #fff;
       }
     }
+    .projectInfo {
+      background: #fff;
+      border-radius: 15px;
+      padding: 48px;
+      margin: 0 20px;
+      .projectTitle {
+        text-align: center;
+        h2 {
+          font-family: "Do Hyeon";
+          font-size: 40px;
+        }
+        p {
+          color: #6c757d;
+        }
+      }
+      .projectContent {
+        display: flex;
+        justify-content: center;
+        .carousel {
+          padding-bottom: 50px;
+        }
+      }
+    }
   }
+}
 
+/**********************************************************
+
+반응형
+
+***********************************************************/
+@media (min-width: 250px) {
+  .projectContent {
+    flex-flow: row wrap;
+    .projectImg {
+      width: 340px;
+      margin: 0 60px;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .projectContent {
+    flex-flow: row wrap;
+    .projectImg {
+      width: 490px;
+      margin: 0 80px;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .projectContent {
+    flex-flow: inherit;
+  }
+  .projectDescript {
+    padding-right: 40px;
+  }
 }
