@@ -2,20 +2,20 @@ import './Header.scss';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { useState, useEffect } from 'react';
+import { Link, scroller } from 'react-scroll';
 
 export default function Header() {
 
   const [scrollPosition, setScrollPosition] = useState(0);
   const handleScrollHeader = () => {
-    setScrollPosition(window.scrollY|| document.documentElement.scrollTop)
+    setScrollPosition(window.scrollY || document.documentElement.scrollTop)
   }
-  useEffect(()=>{
+  useEffect(() => {
     window.addEventListener('scroll', handleScrollHeader)
   })
 
-
   return (
-    <header id="header" className={`nav-wrapper fixed-top navbar navbar-togglealbe-sm navbar-expand-md ${scrollPosition? 'headerScroll' : ''}`}>
+    <header id="header" className={`nav-wrapper fixed-top navbar navbar-togglealbe-sm navbar-expand-md ${scrollPosition ? 'headerScroll' : ''}`}>
       <div className="container">
         <Navbar className='w-100' collapseOnSelect expand='lg' >
           <Navbar.Brand href='/'>
@@ -24,10 +24,18 @@ export default function Header() {
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
           <Navbar.Collapse id='responsive-navbar-nav'>
             <Nav className='nav-justified w-100 nav-fill nav-name'>
-              <Nav.Link href='/'>About me</Nav.Link>
-              <Nav.Link href='/'>Skills</Nav.Link>
-              <Nav.Link href='/'>Project</Nav.Link>
-              <Nav.Link href='/'>Timeline</Nav.Link>
+              <Navbar.Text className='nav-link'>
+                <Link to='aboutme' spy={true} smooth={true} offset={-80} duration={300}>About me</Link>
+              </Navbar.Text>
+              <Navbar.Text className='nav-link'>
+                <Link to='skills' spy={true} smooth={true} offset={-80} duration={300}>Skills</Link>
+              </Navbar.Text>
+              <Navbar.Text className='nav-link'>
+                <Link to='project' spy={true} smooth={true} offset={-80} duration={300}>Project</Link>
+              </Navbar.Text>
+              <Navbar.Text className='nav-link'>
+                <Link to='timeline' spy={true} smooth={true} offset={0} duration={300}>Timeline</Link>
+              </Navbar.Text>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

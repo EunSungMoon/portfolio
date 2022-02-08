@@ -15,7 +15,6 @@
     .h1 {
       font-family: "Do Hyeon";
       margin-bottom: 30px;
-      font-size: 60px;
     }
     .moreBtn{
       border-radius: 16px;
@@ -30,6 +29,30 @@
       &:hover {
         background: $yellowHover-color;
       }
+    }
+  }
+}
+/**********************************************************
+
+반응형
+
+***********************************************************/
+@media (min-width: 250px) {
+  #aboutme {
+    .h1 {
+      font-size: 40px;
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+
+}
+
+@include media-breakpoint-up(md) {
+  #aboutme {
+    .h1 {
+      font-size: 60px;
     }
   }
 }

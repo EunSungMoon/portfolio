@@ -5,12 +5,15 @@
 
 #header {
   .logo,
-  .nav-name {
+  .navbar-text {
     font-family: "Do Hyeon";
   }
-  .nav-link{
-    &:hover {
-      color: $gray-color;
+  .navbar-text {
+    a {
+      text-decoration: none;
+      &:hover {
+        color: $gray-color;
+      }
     }
   }
 }
@@ -18,13 +21,19 @@
 .headerScroll {
   background: $yellow-color !important;
   color: $main-color !important;
-  .logo,
-  .nav-link {
+  .logo {
     color: $main-color !important;
   }
-  .nav-link{
-    &:hover {
-      color: $gray-color !important;
+  .navbar-text {
+    a {
+      color: $main-color !important;
+    }
+  }
+  .navbar-text {
+    a {
+      &:hover {
+        color: $gray-color !important;
+      }
     }
   }
 }
@@ -33,10 +42,10 @@
   #header {
     background: $yellow-color;
     .logo,
-    .nav-link {
+    .navbar-text {
       color: $main-color;
     }
-    .navbar-toggler{
+    .navbar-toggler {
       color: $main-color;
       border-color: $main-color;
     }
@@ -45,9 +54,13 @@
 @include media-breakpoint-up(md) {
   #header {
     background: $main-color;
-    .logo,
-    .nav-link {
+    .logo {
       color: $yellow-color;
+    }
+    .navbar-text {
+      a {
+        color: $yellow-color;
+      }
     }
   }
 }
