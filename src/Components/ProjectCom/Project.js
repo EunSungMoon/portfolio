@@ -22,6 +22,12 @@ export default function Project() {
               <Carousel.Item>
                 <img className='projectImg' src={mainpage} alt='' />
               </Carousel.Item>
+              <Carousel.Item>
+                <img className='projectImg' src={boardpage} alt='' />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className='projectImg' src={contentpage} alt='' />
+              </Carousel.Item>
             </Carousel>
             <div className='projectDescript'>
               <div className='projectMainDescript'>
