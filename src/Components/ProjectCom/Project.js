@@ -16,7 +16,6 @@ export default function Project() {
             <h2>프렌즈</h2>
             <p>2021.12-2022.2 (3인 프로젝트)</p>
           </div>
-
           <article className='projectContent'>
             <Carousel variant="dark">
               <Carousel.Item>

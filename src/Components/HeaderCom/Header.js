@@ -2,7 +2,7 @@ import './Header.scss';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { useState, useEffect } from 'react';
-import { Link, scroller } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 export default function Header() {
 
