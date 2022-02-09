@@ -3,13 +3,75 @@
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
-#timeline{
+#timeline {
   background: #a6a7b9;
-  .timelineWrap{
+  .timelineWrap {
     padding: 70px 0;
-    .titleWrap{
-      h1{
+    .titleWrap {
+      h1 {
         @include title;
+      }
+    }
+  }
+  .timelineInfo {
+    background: #fff;
+    border-radius: 15px;
+    padding: 40px;
+    margin: 0 20px;
+    p {
+      margin-bottom: 0;
+    }
+    .careerWrap {
+      @include display(center);
+      margin-bottom: 20px;
+      .careerDate {
+        width: 200px;
+        text-align: right;
+        margin-right: 20px;
+        color: $gray-color;
+      }
+      .detailWrap {
+        display: flex;
+        flex-flow: column;
+        width: 250px;
+        .careerContent {
+          font-weight: bold;
+        }
+      }
+    }
+    .noMargin {
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: 250px) {
+  .careerWrap {
+    .careerDate {
+      font-size: 20px;
+    }
+    .detailWrap {
+      .careerContent {
+        font-size: 14px;
+      }
+      .careerDetail {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .careerWrap {
+    .careerDate {
+      font-size: 26px;
+    }
+    .detailWrap {
+      .careerContent {
+        font-size: 16px;
+      }
+      .careerDetail {
+        font-size: 14px;
       }
     }
   }
