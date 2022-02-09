@@ -7,6 +7,9 @@ export default function Timeline() {
         <div className='titleWrap'>
           <h1>TIMELINE</h1>
         </div>
+        <article>
+
+        </article>
       </div>
     </section>
   )

@@ -14,7 +14,7 @@ export default function Aboutme() {
           to='skills'
           spy={true}
           smooth={true}
-          offset={-90}
+          offset={-70}
           duration={300}
         >
           <button className='moreBtn'>

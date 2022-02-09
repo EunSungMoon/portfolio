@@ -12,9 +12,9 @@ export default function Skills() {
           <h1>SKILLS</h1>
         </div>
         <div className='stackContainer'>
-          <SkillsCom title={'Front-end'} img={frontend}/>
-          <SkillsCom title={'Version Control'} img={versioncontrol} />
-          <SkillsCom title={'Communication'} img={communication} />
+          <SkillsCom className="" title={'Front-end'} img={frontend} />
+          <SkillsCom className="margin" title={'Version Control'} img={versioncontrol} />
+          <SkillsCom className="" title={'Communication'} img={communication} />
         </div>
       </div>
     </section>

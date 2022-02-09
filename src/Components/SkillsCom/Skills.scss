@@ -15,17 +15,18 @@
     .stackContainer {
       display: flex;
       align-items: baseline;
-      justify-content: space-around;
+      justify-content: center;
       align-content: space-around;
       .stackWrap {
         @include box();
         margin-bottom: 20px;
+        width: 260px;
         transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
         &:hover {
           transform: translateY(-4px);
         }
+
         .h2 {
-          font-size: 22px;
           color: #333;
           border-bottom: 2px solid #e7eaf1;
           padding-bottom: 10px;
@@ -46,25 +47,32 @@
 @media (min-width: 250px) {
   .stackContainer {
     flex-flow: column wrap;
-    .stackWrap {
-      width: 288px;
-      margin-right: 0;
+    .margin {
+      margin: 0;
+    }
+    .h2 {
+      font-size: 18px;
     }
   }
 }
 
-@include media-breakpoint-up(sm) {
+@include media-breakpoint-up(md) {
   .stackContainer {
-    flex-flow: column wrap;
+    flex-flow: nowrap;
+    .margin {
+      margin: 0 20px;
+    }
   }
 }
 
 @include media-breakpoint-up(lg) {
   .stackContainer {
     flex-flow: inherit;
-    .stackWrap {
-      width: 350px;
-      margin-right: 20px;
+    .margin {
+      margin: 0 30px;
+    }
+    .h2 {
+      font-size: 22px;
     }
   }
 }
