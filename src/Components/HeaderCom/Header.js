@@ -3,6 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
+import { BsArrowUp } from "react-icons/bs";
 
 export default function Header() {
 
@@ -40,6 +41,7 @@ export default function Header() {
           </Navbar.Collapse>
         </Navbar>
       </div>
+      <BsArrowUp />
     </header>
   )
 }

@@ -21,7 +21,6 @@ export default function Aboutme() {
             더 알아보기 <BsCaretDownFill />
           </button>
         </Link>
-
       </div>
     </section>
   )

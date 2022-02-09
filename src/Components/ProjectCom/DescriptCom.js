@@ -25,6 +25,7 @@ export default function DescriptCom(props) {
               {props.mainDescript1}
             </p>
             <p>
+              <span className='colorRed'>{props.red}</span>
               {props.mainDescript2}
             </p>
           </div>
