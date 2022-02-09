@@ -41,7 +41,9 @@ export default function Header() {
           </Navbar.Collapse>
         </Navbar>
       </div>
-      <BsArrowUp />
+      <Link to='aboutme' spy={true} smooth={true} offset={-90} duration={100}>
+        <BsArrowUp className='arrowUp' />
+      </Link>
     </header>
   )
 }
