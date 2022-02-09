@@ -37,42 +37,42 @@ export default function Project() {
                   봉사활동의 선순환을 만드는 것이 프렌즈의 목표!
                 </p>
                 <p>
-                  백엔드 개발자, 웹디자이너와 함께 개발한 프로젝트입니다.
-                  백엔드 개발자와의 협업으로 API통신 기본원리, http의 작동원리에 대한 개념들을 확실하게 정리할 수 있었습니다.
-                  웹 디자이너와 소통하면서 UI&UX에 대해 함께 공부하고 고민해볼 수 있었습니다.
+                  <span className='colorRed'>백엔드 개발자, 웹디자이너와 함께 개발한 프로젝트입니다. </span>
+                  백엔드 개발자와의 협업으로 API통신 기본원리, http의 작동원리에 대한 개념들을 확실하게 정리할 수 있었습니다. 
+                  웹 디자이너와 소통하면서 UI&UX에 대해 함께 공부하고 고민해볼 수 있었습니다. 
                   bootstrap을 활용하여 반응형 웹으로 제작했습니다.
                 </p>
               </div>
               <div className='projectSkillDescript'>
                 <div className='descriptWrapper'>
-                  <span className='projectLabel'>주요기능</span>
-                  <span className='projectValue'>봉사활동 모집 게시글 작성, 수정, 삭제하기</span>
+                  <div className='projectLabel'>주요기능</div>
+                  <span className='projectValue'>봉사 모집 게시글 작성, 수정, 삭제하기</span>
                 </div>
 
                 <div className='descriptWrapper'>
-                  <span className='projectLabel'>Github</span>
+                  <div className='projectLabel'>Github</div>
                   <span className='projectValue'>
-                    <a href='https://github.com/EunSungMoon/friends'>https://github.com/EunSungMoon/friends</a>
+                    <a href='https://github.com/EunSungMoon/friends' target='blank'>github.com/EunSungMoon/friends</a>
                   </span>
                 </div>
 
                 <div className='descriptWrapper'>
-                  <span className='projectLabel'>도메인</span>
+                  <div className='projectLabel'>도메인</div>
                   <span className='projectValue'>곧 생길 예정!!</span>
                 </div>
 
                 <div className='descriptWrapper'>
-                  <span className='projectLabel'>Front-end</span>
+                  <div className='projectLabel'>Front-end</div>
                   <span className='projectValue'>React, sass</span>
                 </div>
 
                 <div className='descriptWrapper'>
-                  <span className='projectLabel'>Back-end</span>
+                  <div className='projectLabel'>Back-end</div>
                   <span className='projectValue'>Django</span>
                 </div>
 
                 <div className='descriptWrapper'>
-                  <span className='projectLabel'>Deployment</span>
+                  <div className='projectLabel'>Deployment</div>
                   <span className='projectValue'>AWS, nginx</span>
                 </div>
               </div>

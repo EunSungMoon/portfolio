@@ -13,8 +13,10 @@
   .aboutmeWrap {
     text-align: center;
     .h1 {
-      font-family: "Do Hyeon";
+      font-family: "Baeum";
       margin-bottom: 30px;
+      word-spacing: 4px;
+      letter-spacing: 2px;
     }
     .moreBtn{
       border-radius: 16px;
@@ -40,19 +42,15 @@
 @media (min-width: 250px) {
   #aboutme {
     .h1 {
-      font-size: 40px;
+      font-size: 30px;
     }
   }
-}
-
-@include media-breakpoint-up(sm) {
-
 }
 
 @include media-breakpoint-up(md) {
   #aboutme {
     .h1 {
-      font-size: 60px;
+      font-size: 40px;
     }
   }
 }
