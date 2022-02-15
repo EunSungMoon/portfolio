@@ -29,36 +29,30 @@
           color: #6c757d;
         }
       }
-      .projectContent {
-        @include display(center);
-        .carousel {
-          padding-bottom: 50px;
-        }
-        .projectDescript {
-          .projectMainDescript {
-            font-weight: 600;
-            word-spacing: 2px;
-            line-height: 26px;
-            .colorRed {
-              color: $red-color;
-            }
+      .projectDescript {
+        .projectMainDescript {
+          font-weight: 600;
+          word-spacing: 2px;
+          line-height: 26px;
+          .colorRed {
+            color: $red-color;
           }
-          .projectSkillDescript {
-            display: flex;
-            flex-flow: column;
-            .descriptWrapper {
-              margin-bottom: 15px;
-              display: inline-flex;
-              align-items: center;
-              .projectLabel {
-                padding: 5px;
-                margin-right: 15px;
-                background: #f1f3fb;
-                border-radius: 15px;
-                width: 110px;
-                text-align: center;
-                font-weight: 600;
-              }
+        }
+        .projectSkillDescript {
+          display: flex;
+          flex-flow: column;
+          .descriptWrapper {
+            margin-bottom: 15px;
+            display: inline-flex;
+            align-items: center;
+            .projectLabel {
+              padding: 5px;
+              margin-right: 15px;
+              background: #f1f3fb;
+              border-radius: 15px;
+              width: 110px;
+              text-align: center;
+              font-weight: 600;
             }
           }
         }

@@ -1,6 +1,17 @@
-import Carousel from 'react-bootstrap/Carousel'
+import Slider from 'react-slick';
+import React from 'react';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function DescriptCom(props) {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
+
   return (
     <>
       <div className='projectTitle'>
@@ -8,7 +19,15 @@ export default function DescriptCom(props) {
         <p>{props.projectPeriod}</p>
       </div>
       <div className='projectContent'>
-        <Carousel variant="dark">
+        <Slider {...settings}>
+          <div>
+            <img className='projectImg' src={props.img1} alt='' />
+          </div>
+          <div>
+            <img className='projectImg' src={props.img2} alt='' />
+          </div>
+        </Slider>
+        {/* <Carousel variant="dark">
           <Carousel.Item>
             <img className='projectImg' src={props.img1} alt='' />
           </Carousel.Item>
@@ -18,8 +37,8 @@ export default function DescriptCom(props) {
           <Carousel.Item>
             <img className='projectImg' src={props.img3} alt='' />
           </Carousel.Item>
-        </Carousel>
-        <div className='projectDescript'>
+        </Carousel> */}
+        {/* <div className='projectDescript'>
           <div className='projectMainDescript'>
             <p>
               {props.mainDescript1}
@@ -62,7 +81,7 @@ export default function DescriptCom(props) {
               <span className='projectValue'>{props.deployment}</span>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   )
