@@ -34,7 +34,7 @@
         justify-content: center;
         .imgWrap {
           .projectImg {
-            width: 90%;
+            width: 100%;
           }
         }
         .projectDescript {
@@ -53,15 +53,13 @@
             .descriptWrapper {
               margin-bottom: 15px;
               display: inline-flex;
-              align-items: center;
               .projectLabel {
-                padding: 5px;
                 margin-right: 15px;
-                background: #f1f3fb;
-                border-radius: 15px;
-                width: 110px;
                 text-align: center;
                 font-weight: 600;
+              }
+              .projectValue {
+                word-break: break-all;
               }
             }
           }
@@ -70,7 +68,6 @@
     }
   }
 }
-
 /**********************************************************
 
 반응형
@@ -84,12 +81,23 @@
       .imgWrap {
         width: 100%;
         margin: 0;
-        .projectImg{
+        .projectImg {
           margin: 0 auto;
         }
       }
-      .projectDescript{
+      .projectDescript {
         margin-top: 50px;
+        .projectSkillDescript {
+          .descriptWrapper {
+            align-items: baseline;
+            flex-direction: column;
+            .projectLabel {
+              border-left: 5px solid;
+              padding-left: 15px;
+              margin-bottom: 10px;
+            }
+          }
+        }
       }
     }
   }
@@ -98,6 +106,26 @@
 }
 
 @include media-breakpoint-up(md) {
+  #project {
+    .wrapper {
+      .projectDescript {
+        .projectSkillDescript {
+          .descriptWrapper {
+            align-items: center;
+            flex-direction: initial;
+            .projectLabel {
+              background: #f1f3fb;
+              border-radius: 15px;
+              width: 110px;
+              padding: 5px;
+              border-left: none;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @include media-breakpoint-up(xl) {
   #project {
@@ -106,12 +134,12 @@
       margin-bottom: 20px;
       .imgWrap {
         width: 50%;
-        margin-right: 20px;
-        .projectImg{
+        margin-right: 40px;
+        .projectImg {
           margin: 0;
         }
       }
-      .projectDescript{
+      .projectDescript {
         margin-top: 0;
       }
     }
