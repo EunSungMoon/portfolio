@@ -13,8 +13,8 @@
       "back":"Django",
       "deployment": "AWS, nginx",
       "img1": "boardpage",
-      "img2": "../Components/ProjectCom/img/friends_contentpage.png",
-      "img3": "../Components/ProjectCom/img/friends_mainpage.png"
+      "img2": "contentpage",
+      "img3": "mainpage"
     },
     {
       "title": "lottolotto",

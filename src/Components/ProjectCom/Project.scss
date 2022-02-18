@@ -29,30 +29,40 @@
           color: #6c757d;
         }
       }
-      .projectDescript {
-        .projectMainDescript {
-          font-weight: 600;
-          word-spacing: 2px;
-          line-height: 26px;
-          .colorRed {
-            color: $red-color;
+      .wrapper {
+        display: flex;
+        justify-content: center;
+        .imgWrap {
+          .projectImg {
+            width: 90%;
           }
         }
-        .projectSkillDescript {
-          display: flex;
-          flex-flow: column;
-          .descriptWrapper {
-            margin-bottom: 15px;
-            display: inline-flex;
-            align-items: center;
-            .projectLabel {
-              padding: 5px;
-              margin-right: 15px;
-              background: #f1f3fb;
-              border-radius: 15px;
-              width: 110px;
-              text-align: center;
-              font-weight: 600;
+        .projectDescript {
+          width: 100%;
+          .projectMainDescript {
+            font-weight: 600;
+            word-spacing: 2px;
+            line-height: 26px;
+            .colorRed {
+              color: $red-color;
+            }
+          }
+          .projectSkillDescript {
+            display: flex;
+            flex-flow: column;
+            .descriptWrapper {
+              margin-bottom: 15px;
+              display: inline-flex;
+              align-items: center;
+              .projectLabel {
+                padding: 5px;
+                margin-right: 15px;
+                background: #f1f3fb;
+                border-radius: 15px;
+                width: 110px;
+                text-align: center;
+                font-weight: 600;
+              }
             }
           }
         }
@@ -67,74 +77,46 @@
 
 ***********************************************************/
 @media (min-width: 250px) {
-  .projectContent {
-    flex-flow: row wrap;
-    .projectImg {
-      width: 260px;
-      margin: 0 50px;
-    }
-    .projectValue {
-      width: 295px;
-      word-break: break-word;
-      a {
-        word-break: break-word;
+  #project {
+    .wrapper {
+      flex-flow: row wrap;
+      margin-bottom: 0;
+      .imgWrap {
+        width: 100%;
+        margin: 0;
+        .projectImg{
+          margin: 0 auto;
+        }
+      }
+      .projectDescript{
+        margin-top: 50px;
       }
     }
   }
-  .projectDescript {
-    width: 100%;
-  }
 }
 @include media-breakpoint-up(sm) {
-  .projectContent {
-    flex-flow: row wrap;
-
-    .projectValue {
-      width: 295px;
-    }
-  }
 }
 
 @include media-breakpoint-up(md) {
-  .projectContent {
-    flex-flow: row wrap;
-    .projectImg {
-      width: 450px;
-      margin: 0 90px;
-    }
-    .projectValue {
-      width: 450px;
-    }
-  }
 }
 @include media-breakpoint-up(xl) {
-  .projectContent {
-    flex-flow: inherit;
-    .carousel {
-      width: 50%;
+  #project {
+    .wrapper {
+      flex-flow: inherit;
+      margin-bottom: 20px;
+      .imgWrap {
+        width: 50%;
+        margin-right: 20px;
+        .projectImg{
+          margin: 0;
+        }
+      }
+      .projectDescript{
+        margin-top: 0;
+      }
     }
-    .projectImg {
-      width: 380px;
-      margin: 0 60px;
-    }
-    .projectValue {
-      width: 295px;
-    }
-  }
-  .projectDescript {
-    padding-right: 40px;
-    width: 50%;
   }
 }
 
 @include media-breakpoint-up(xxl) {
-  .projectContent {
-    .projectImg {
-      width: 460px;
-      margin: 0 65px;
-    }
-    .projectValue {
-      width: 450px;
-    }
-  }
 }
