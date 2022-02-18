@@ -9,7 +9,7 @@
       "service": "봉사 모집 게시글 작성, 수정, 삭제하기",
       "gitAddress": "github.com/EunSungMoon/friends",
       "domain": "곧 생길 예정",
-      "front": "React, sass",
+      "front": "React, sass, Bootstrap",
       "back":"Django",
       "deployment": "AWS, nginx",
       "img1": "boardpage",
@@ -25,9 +25,24 @@
       "service": "랜덤한 숫자 7자리 출력, 지난 회차 당첨 번호 보여주기",
       "gitAddress": "github.com/EunSungMoon/lottery",
       "domain": "곧 생길 예정",
-      "front": "React, sass",
+      "front": "React, sass, Bootstrap",
       "back":"Django",
       "deployment": "AWS, nginx"
+    },
+    {
+      "title": "포트폴리오 웹사이트",
+      "id":"3",
+      "period": "2022.02 (1인 프로젝트)",
+      "mainDescript": "현재 보고있는 이 웹사이트를 말하며, 포트폴리오 용으로 제작되었습니다.",
+      "subDescript": "",
+      "service": "자기소개, 기술 스택, 프로젝트 경험, 이력",
+      "gitAddress": "github.com/EunSungMoon/portfolio",
+      "domain": "곧 생길 예정",
+      "front": "React, sass, Bootstrap",
+      "back":"",
+      "deployment": "AWS, nginx",
+      "img1": "boardpage",
+      "img2": "contentpage"
     }
   ]
 }

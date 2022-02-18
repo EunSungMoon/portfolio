@@ -38,6 +38,9 @@ export default function Project(props) {
                   <div>
                     <img className='projectImg' src={`/projectImg/friends_${d.img2}.png`} alt='img2' />
                   </div>
+                  <div>
+                    <img className='projectImg' src={`/projectImg/friends_${d.img3}.png`} alt='img3' />
+                  </div>
                 </Slider>
               </div>
               <div className='projectDescript'>
@@ -71,11 +74,14 @@ export default function Project(props) {
                     <div className='projectLabel'>Front-end</div>
                     <span className='projectValue'>{d.front}</span>
                   </div>
+                  {
+                    d.back==='' ? null :
+                      <div className='descriptWrapper'>
+                        <div className='projectLabel'>Back-end</div>
+                        <span className='projectValue'>{d.back}</span>
+                      </div>
+                  }
 
-                  <div className='descriptWrapper'>
-                    <div className='projectLabel'>Back-end</div>
-                    <span className='projectValue'>{d.back}</span>
-                  </div>
 
                   <div className='descriptWrapper'>
                     <div className='projectLabel'>Deployment</div>
