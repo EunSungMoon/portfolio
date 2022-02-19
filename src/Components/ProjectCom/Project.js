@@ -2,7 +2,6 @@ import './Project.scss';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import test from './img/friends_boardpage.png'
 
 import data from '../../data/data.json'
 
@@ -15,6 +14,7 @@ export default function Project(props) {
     slidesToShow: 1,
     slidesToScroll: 1
   };
+
 
   return (
     <section id='project'>
@@ -32,15 +32,12 @@ export default function Project(props) {
             <div className='wrapper'>
               <div className='imgWrap'>
                 <Slider {...settings}>
-                  <div>
-                    <img className='projectImg' src={`/projectImg/friends_${d.img1}.png`} alt='img1' />
-                  </div>
-                  <div>
-                    <img className='projectImg' src={`/projectImg/friends_${d.img2}.png`} alt='img2' />
-                  </div>
-                  <div>
-                    <img className='projectImg' src={`/projectImg/friends_${d.img3}.png`} alt='img3' />
-                  </div>
+                  {/* {d.projectImage.map(i => (
+                    <div>
+                      <img className='projectImg' src={`/projectImg/${i}/.png`} alt='img1' />
+                    </div>
+                  ))} */}
+
                 </Slider>
               </div>
               <div className='projectDescript'>
@@ -49,6 +46,9 @@ export default function Project(props) {
                     {d.mainDescript}
                   </p>
                   <p>
+                    {
+                      d.highlight === '' ? null : <span className='colorRed'>{d.highlight} </span>
+                    }
                     {d.subDescript}
                   </p>
                 </div>
@@ -65,28 +65,34 @@ export default function Project(props) {
                     </span>
                   </div>
 
-                  <div className='descriptWrapper'>
-                    <div className='projectLabel'>도메인</div>
-                    <span className='projectValue'>{d.domain}</span>
-                  </div>
+                  {
+                    d.domain === '' ? null :
+                      <div className='descriptWrapper'>
+                        <div className='projectLabel'>도메인</div>
+                        <span className='projectValue'>{d.domain}</span>
+                      </div>
+                  }
 
                   <div className='descriptWrapper'>
                     <div className='projectLabel'>Front-end</div>
                     <span className='projectValue'>{d.front}</span>
                   </div>
+
                   {
-                    d.back==='' ? null :
+                    d.back === '' ? null :
                       <div className='descriptWrapper'>
                         <div className='projectLabel'>Back-end</div>
                         <span className='projectValue'>{d.back}</span>
                       </div>
                   }
 
-
-                  <div className='descriptWrapper'>
-                    <div className='projectLabel'>Deployment</div>
-                    <span className='projectValue'>{d.deployment}</span>
-                  </div>
+                  {
+                    d.deployment === '' ? null :
+                      <div className='descriptWrapper'>
+                        <div className='projectLabel'>Deployment</div>
+                        <span className='projectValue'>{d.deployment}</span>
+                      </div>
+                  }
                 </div>
               </div>
             </div>
