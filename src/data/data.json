@@ -2,36 +2,44 @@
   "project": [
     {
       "title": "프렌즈",
-      "id":"1",
+      "id": "1",
       "period": "2021.12-2022.02 (3인 프로젝트)",
       "mainDescript": "기관이나 병원은 봉사자 모집글을 게시하고 봉사활동을 원하는 사람들은 게시글을 보고 참여할 수 있다. 누구나 쉽게 참여하고, 누구나 쉽게 모집할 수 있도록 봉사활동의 선순환을 만드는 것이 프렌즈의 목표!",
-      "highlight":"이 프로젝트는 백엔드 개발자, 웹디자이너와 함께 개발한 프로젝트 입니다.",
+      "highlight": "이 프로젝트는 백엔드 개발자, 웹디자이너와 함께 개발한 프로젝트 입니다.",
       "subDescript": "백엔드 개발자와의 협업으로 API통신 기본원리, HTTP의 작동원리에 대한 개념들을 확실하게 정리할 수 있었습니다. 웹 디자이너와 소통하면서 UI&UX에 대해 함께 공부하고, 고민해볼 수 있었습니다. Bootstrap을 활용한 반응형 웹으로 제작했습니다.",
       "service": "봉사 모집 게시글 작성, 수정, 삭제하기",
       "gitAddress": "github.com/EunSungMoon/friends",
       "domain": "곧 생길 예정",
       "front": "React, sass, Bootstrap",
-      "back":"Django",
+      "back": "Django",
       "deployment": "AWS, nginx",
-      "projectImage":"friends"
+      "projectImage": [
+        "mainpage",
+        "boardpage",
+        "contentpage"
+      ]
     },
     {
       "title": "lottolotto",
-      "id":"2",
+      "id": "2",
       "period": "2021.01.25-2022.02.15 (3인 프로젝트)",
       "mainDescript": "이번 프로젝트는 백엔드 개발자와의 협업 보다는 웹 디자이너와의 협업이 주로 이루어진 프로젝트 입니다.",
-      "highlight":"로또번호를 생성해주고, 지난 회차 1등 당첨 번호 보여주기 기능이 들어있는 웹입니다.",
+      "highlight": "로또번호를 생성해주고, 지난 회차 1등 당첨 번호 보여주기 기능이 들어있는 웹입니다.",
       "subDescript": "랜덤하게 숫자를 출력하는 로직, 숫자별 공 색깔 다르게 하는 로직을 구성하기, 외부 api를 활용하는 방법을 공부할 수 있었습니다.",
       "service": "랜덤한 숫자 7자리 출력, 지난 회차 당첨 번호 보여주기",
       "gitAddress": "github.com/EunSungMoon/lottery",
       "domain": "곧 생길 예정",
       "front": "React, sass, Bootstrap",
-      "back":"Django",
-      "deployment": "AWS, nginx"
+      "back": "Django",
+      "deployment": "AWS, nginx",
+      "projectImage": [
+        "lottery1",
+        "lottery2"
+      ]
     },
     {
       "title": "포트폴리오 웹사이트",
-      "id":"3",
+      "id": "3",
       "period": "2022.02 (1인 프로젝트)",
       "mainDescript": "현재 보고있는 이 웹사이트를 말하며, 포트폴리오 용으로 제작되었습니다.",
       "subDescript": "계속해서 프로젝트들을 업로드 할 예정입니다.",
@@ -39,8 +47,13 @@
       "gitAddress": "github.com/EunSungMoon/portfolio",
       "domain": "곧 생길 예정",
       "front": "React, sass, Bootstrap",
-      "back":"",
-      "deployment": "AWS, nginx"
+      "back": "",
+      "deployment": "AWS, nginx",
+      "projectImage": [
+        "boardpage",
+        "contentpage",
+        "mainpage"
+      ]
     }
   ]
 }

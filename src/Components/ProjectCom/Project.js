@@ -5,16 +5,14 @@ import Slider from "react-slick";
 
 import data from '../../data/data.json'
 
-export default function Project(props) {
-  console.log(data.project)
-  var settings = {
+export default function Project() {
+  let settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1
   };
-
 
   return (
     <section id='project'>
@@ -32,12 +30,11 @@ export default function Project(props) {
             <div className='wrapper'>
               <div className='imgWrap'>
                 <Slider {...settings}>
-                  {/* {d.projectImage.map(i => (
-                    <div>
-                      <img className='projectImg' src={`/projectImg/${i}/.png`} alt='img1' />
+                  {d.projectImage.map(i => (
+                    <div key={i}>
+                      <img className='projectImg' src={`/projectImg/${i}.png`} alt='img1' />
                     </div>
-                  ))} */}
-
+                  ))}
                 </Slider>
               </div>
               <div className='projectDescript'>
