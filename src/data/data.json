@@ -10,7 +10,7 @@
       "service": "봉사 모집 게시글 작성, 수정, 삭제하기",
       "gitAddress": "github.com/EunSungMoon/friends",
       "domain": "곧 생길 예정",
-      "front": "React, sass, Bootstrap",
+      "front": "React, javascript, sass, Bootstrap",
       "back": "Django",
       "deployment": "AWS, nginx",
       "projectImage": [
@@ -29,7 +29,7 @@
       "service": "랜덤한 숫자 7자리 출력, 지난 회차 당첨 번호 보여주기",
       "gitAddress": "github.com/EunSungMoon/lottery",
       "domain": "곧 생길 예정",
-      "front": "React, sass, Bootstrap",
+      "front": "React, javascript, sass, Bootstrap",
       "back": "Django",
       "deployment": "AWS, nginx",
       "projectImage": [
@@ -46,8 +46,26 @@
       "service": "자기소개, 기술 스택, 프로젝트 경험, 이력",
       "gitAddress": "github.com/EunSungMoon/portfolio",
       "domain": "곧 생길 예정",
-      "front": "React, sass, Bootstrap",
+      "front": "React, javascript, sass, Bootstrap",
       "back": "",
+      "deployment": "AWS, nginx",
+      "projectImage": [
+        "boardpage",
+        "contentpage",
+        "mainpage"
+      ]
+    },
+    {
+      "title": "똑똑이(smarty)",
+      "id": "4",
+      "period": "2022.02 - 2022.03 (3인 프로젝트)",
+      "mainDescript": "똑똑하게 관리해주는 투두리스트 똑똑이",
+      "subDescript": "첫 typescript로 개발한 프로젝트입니다. typescript",
+      "service": "투두리스트, 중요도 관리, 캘린더",
+      "gitAddress": "github.com/EunSungMoon/smarty",
+      "domain": "곧 생길 예정",
+      "front": "React, typescript, sass, Bootstrap",
+      "back": "Django",
       "deployment": "AWS, nginx",
       "projectImage": [
         "boardpage",
