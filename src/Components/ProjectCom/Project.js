@@ -2,6 +2,9 @@ import './Project.scss';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ProjectCom from './ProjectContent';
+import mainpage from './projectImg/mainpage.png'
+import boardpage from './projectImg/boardpage.png'
+import contentpage from './projectImg/contentpage.png'
 
 export default function Project() {
   const friendsSub = () => (
@@ -62,9 +65,9 @@ export default function Project() {
           title="프렌즈"
           period="2021.12-2022.02 (3인 프로젝트)"
           projectImage={[
-            "mainpage",
-            "boardpage",
-            "contentpage"
+            mainpage,
+            boardpage,
+            contentpage
           ]}
           mainDescript={`기관이나 병원은 봉사자 모집글을 게시하고 봉사활동을 원하는 사람들은 게시글을 보고 참여할 수 있다. 
           누구나 쉽게 참여하고, 누구나 쉽게 모집할 수 있도록 봉사활동의 선순환을 만드는 것이 프렌즈의 목표!`}
@@ -98,9 +101,9 @@ export default function Project() {
           title="포트폴리오"
           period="2022.02- (1인 프로젝트)"
           projectImage={[
-            "boardpage",
-            "contentpage",
-            "mainpage"
+            boardpage,
+            contentpage,
+            mainpage
           ]}
           mainDescript={`현재 보고있는 이 웹사이트를 말하며, 포트폴리오 용으로 제작되었습니다.`}
           subDescript={portfolioSub()}
@@ -116,9 +119,9 @@ export default function Project() {
           title="똑똑이"
           period="2022.02 - 2022.03 (3인 프로젝트)"
           projectImage={[
-            "boardpage",
-            "contentpage",
-            "mainpage"
+            boardpage,
+            contentpage,
+            mainpage
           ]}
           mainDescript={`똑똑하게 관리해주는 투두리스트 똑똑이`}
           subDescript={smartySub()}
@@ -129,14 +132,14 @@ export default function Project() {
           back="Django"
           deployment="AWS, nginx"
         />
-        
+
         <ProjectCom
           title="채미왔소"
           period="2022.04 - 2022.05 (3인 프로젝트)"
           projectImage={[
-            "boardpage",
-            "contentpage",
-            "mainpage"
+            boardpage,
+            contentpage,
+            mainpage
           ]}
           mainDescript={`구멍가게 재고관리 시스템`}
           subDescript={marketSub()}

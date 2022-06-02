@@ -21,7 +21,7 @@ export default function ProjectCom(props) {
           <Slider {...settings}>
             {props.projectImage.map(i => (
               <div key={i}>
-                <img className='projectImg' src={`/projectImg/${i}.png`} alt='img1' />
+                <img className='projectImg' src={i} alt='img1' />
               </div>
             ))}
           </Slider>
