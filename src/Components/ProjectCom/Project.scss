@@ -38,14 +38,16 @@
           }
         }
         .projectDescript {
-          font-size: 14px;
+          font-size: 16px;
           width: 100%;
           .projectMainDescript {
-            font-weight: 600;
             word-spacing: 2px;
             line-height: 26px;
             .colorRed {
               color: $red-color;
+            }
+            .bold{
+              font-weight: bolder;
             }
           }
           .projectSkillDescript {

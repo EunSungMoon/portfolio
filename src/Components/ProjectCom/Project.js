@@ -9,20 +9,27 @@ import contentpage from './projectImg/contentpage.png'
 export default function Project() {
   const friendsSub = () => (
     <p>
-      <span className='colorRed' >이번 프로젝는 처음 시도하는 것들이 많았다. Axios, react, 외부 라이브러리까지</span>
-      그래서 두마리 토끼를 동시에 잡을 수 없듯 모두를 완벽하게 이해하고 넘어가기보단 react, axios와 친해지기에 목표를 두었다.
+      <span className='colorRed' >이번 프로젝는 처음 시도하는 것들이 많았다. Axios, react, 백엔드와의 협업까지 </span>
+      그래서 모두를 완벽하게 이해하고 넘어가기보단 새로운 것들과 친해지기에 목표를 두었다.
+      <p></p>
       원래 프렌즈는 순수 자바스크립트로 개발을 하다가 react로 전환시켰다.
-      전환시킨 이유는 그냥이었다.react를 왜 사용하고, 왜 많은 사람들이 사용하는지 모르고 그냥 많이 사용하니까 써보자 라는 마음으로 시작하게 된 프로젝트이다.
+      전환시킨 이유는 그냥이었다. 많은 사람들이 react에 열광하는지 직접 사용해보자 라는 마음으로 시작하게 된 프로젝트이다.
       순수 자바스크립트보다 편리하게 상태관리를 할 수 있다는 장점이 가장 큰 것 같다. 처음이라 이벤트를 적용시키는 것부터 어색했다.
-      useState, useEffect를 사용하는 것, 비동기 처리되는 것은 더더욱 어렵게 했다. 목표대로 react와 친해지기는 성공했다.
+      useState, useEffect를 사용하는 것, 비동기 처리되는 것은 더더욱 어려웠지만 목표대로 react와 친해지기는 성공했다.
+      <p></p>
+      백엔드와의 협업을 통해서 많은 것들을 배울 수 있는 프로젝트였다. api를 사용해보고, 다른 개발자와 소통하고, 서로의 분야에 대해 공유하는 것 등등 흥미로운 것들을 많이 배울 수 있었다.
+      <p></p>
       앞으로 해결해 나갈 숙제들이 많지만 개발하는 내내 뿌듯하고 즐거웠던 프로젝트였다.
     </p>
   )
 
   const lottoSub = () => (
     <p>
-      <span className='colorRed' >로또번호를 생성해주고, 지난 회차 1등 당첨 번호 보여주기 기능이 들어있는 웹입니다.</span>
-      랜덤하게 숫자를 출력하는 로직, 숫자별 공 색깔 다르게 하는 로직을 구성하기, 외부 api를 활용하는 방법을 공부할 수 있었습니다.
+      <span className='colorRed'>웹 디자이너와 협업이 주로 이루어진 프로젝트이다. </span>
+      그래서 기능보단 디자인에 집중하기로 했다.
+      처음에는 웹 위주의 프로젝트를 진행하다가 모바일도 도전하게 되었다.
+      웹 위주의 디자인을 가지고 <span className='colorRed'>모바일을 만들었는데</span> 디자이너와 디자인 수정하면서 서로의 입장을 나누고,
+      맞추는 과정들이 꽤나 흥미로웠다.
     </p>
   )
   const portfolioSub = () => (
@@ -87,9 +94,9 @@ export default function Project() {
             "lottery1",
             "lottery2"
           ]}
-          mainDescript={`이번 프로젝트는 백엔드 개발자와의 협업 보다는 웹 디자이너와의 협업이 주로 이루어진 프로젝트 입니다.`}
+          mainDescript={`로또 번호를 만들어 주고, 지난 회차 당첨 번호를 보여주는 프로젝트!`}
           subDescript={lottoSub()}
-          service="랜덤한 숫자 7자리 출력, 지난 회차 당첨 번호 보여주기"
+          service="랜덤한 숫자 6자리 출력, 지난 회차 당첨 번호 보여주기"
           gitAddress="github.com/EunSungMoon/lottery"
           domain="곧 생길 예정"
           front="React, javascript, sass, Bootstrap"

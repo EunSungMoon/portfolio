@@ -28,7 +28,7 @@ export default function ProjectCom(props) {
         </div>
         <div className='projectDescript'>
           <div className='projectMainDescript'>
-            <p>{props.mainDescript}</p>
+            <p className="bold">{props.mainDescript}</p>
             {props.subDescript}
           </div>
           <div className='projectSkillDescript'>
