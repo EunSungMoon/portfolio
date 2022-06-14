@@ -4,12 +4,13 @@
 @import "~bootstrap/scss/mixins";
 
 #skills {
-  background: $lightpurple-color;
+  background: $purple-color;
   .skillsWrap {
     padding: 70px 0;
     .titleWrap {
       h1 {
         @include title;
+        color: #fff;
       }
     }
     .stackContainer {

@@ -4,13 +4,12 @@
 @import "~bootstrap/scss/mixins";
 
 #project {
-  background: $purple-color;
+  background: $lightpurple-color;
   .projectWrap {
     padding: 70px 0;
     .titleWrap {
       h1 {
         @include title;
-        color: #fff;
       }
     }
     .projectInfo {

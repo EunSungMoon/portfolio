@@ -8,8 +8,8 @@ export default function Main() {
   return (
     <main>
       <Aboutme />
-      <Skills />
       <Project />
+      <Skills />
       <Timeline />
     </main>
   )

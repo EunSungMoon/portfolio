@@ -11,7 +11,7 @@ export default function Aboutme() {
           프론트엔드 개발자 문은성입니다.<br />
         </h1>
         <Link
-          to='skills'
+          to='project'
           spy={true}
           smooth={true}
           offset={-70}
