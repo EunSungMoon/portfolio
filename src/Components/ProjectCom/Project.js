@@ -40,24 +40,26 @@ export default function Project() {
 
   const marketSub = () => (
     <p>
-      <span className='colorRed'></span>
-      typescript를 적용한 두번째 프로젝트.
-      타입을 지정하는 것이 전보단 많이 좋아졌지만 그래도 익숙하지 않았습니다.
-      eslint까지 적용해서인지 어려움이 많았지만 코드를 작성하는 공부를 할 수 있었다.
-      react로 여러 프로젝트를 개발했지만 useEffect를 사용하면서도 렌더링 되는 과정이 이해가 안됬었는데 확실하게 공부할 수 있었습니다.
-      이전보단 훨씬 다양하게 react의 기능들을 사용하려 도전했고 공부하는데 도움이 많이 되었다.
-      새로운 component 라이브러리를 사용해봤습니다.
+      typescript를 적용한 두번째 프로젝트이다. 
+      타입을 지정하는 것이 전보단 많이 좋아졌지만 그래도 익숙하지 않았다. 
+      eslint까지 적용해서인지 어려움이 많았지만 개발 공부하는데 많은 도움이 되었다. 
+      React로 여러 프로젝트를 개발했지만 <span className='colorRed'>useState, useEffect를 사용하면서도 렌더링 되는 과정이 이해가 안됐었는데 확실하게 공부할 수 있었다.</span>
+      이전보단 훨씬 다양하게 react의 기능들을 사용하려 도전하려 노력했고, 새로운 Mui 라이브러리를 사용해봤다.
     </p>
   )
 
   const smartySub = () => (
     <p>
       <span className='colorRed'>typescript로 개발한 프로젝트입니다.</span>
-      typescript를 공부할 수 있는 좋은 경험이었습니다.
-      static한 타입 언어를 처음 사용해서 어려움이 많았습니다.
-      개발을 진행하면 할수록 javascript를 사용할 때 보다 쉽게 오류를 찾아낼 수 있었습니다.
-      앞으로 typescript 공부를 더 해볼 계획입니다.
-      dayjs를 사용해 캘린더를 개발하고, 클릭한 날짜에 해당하는 투두리스트를 출력해주는 기능을 개발했습니다.
+      도입하게 된 이유는 호기심이었다.
+      변수의 타입을 지정하는 것부터 난관이었다.
+      바닐라js를 사용했을 때 넘어간 문제들이 보였고, 해결하는 재미가 쏠쏠했다.
+      아직은 typescript의 다양한 기능들을 활용하지 못해 아쉬웠다. 더 공부해서 활용을 더 해보고 싶다.
+      <p></p>
+      캘린더는 장 많이 사용하던 moment.js대신 dayjs를 사용했다. 장단점을 고려했을 때 dayjs를 선택하는 것이 좋을 듯 했다.
+      <p></p>
+      리스트의 중요도를 높음, 중간, 낮음 3단계로 나누어 서로다른 색을 사용하여 포인트를 강조했다.
+      월간 보기, 일간 보기 등의 기능을 추가하여 월 단위, 일 단위로도 To Do 리스트를 확인 할 수 있도록 했다.
     </p>
   )
 
@@ -76,8 +78,8 @@ export default function Project() {
             boardpage,
             contentpage
           ]}
-          mainDescript={`기관이나 병원은 봉사자 모집글을 게시하고 봉사활동을 원하는 사람들은 게시글을 보고 참여할 수 있다. 
-          누구나 쉽게 참여하고, 누구나 쉽게 모집할 수 있도록 봉사활동의 선순환을 만드는 것이 프렌즈의 목표!`}
+          mainDescript={`본인이 가진 기술로 봉사를 하고 싶은 미용사들과 봉사가 필요한 사람들을 연결하는 봉사활동 매칭 플랫폼입니다. 
+          기획자는 미용 자격증을 가지고 있는 사람으로 휴일에는 봉사활동에 참여하고 싶었으나 마땅한 기관이나 장소를 찾지 못하는 어려움에 착안했습니다.`}
           subDescript={friendsSub()}
           service="봉사 모집 게시글 작성, 수정, 삭제하기"
           gitAddress="github.com/EunSungMoon/friends"
@@ -94,7 +96,12 @@ export default function Project() {
             "lottery1",
             "lottery2"
           ]}
-          mainDescript={`로또 번호를 만들어 주고, 지난 회차 당첨 번호를 보여주는 프로젝트!`}
+          mainDescript={`로또 번호를 자동 생성해주는 웹사이트입니다. 과거의 1등 당첨번호도 확인 할 수 있습니다. 
+          이 사이트로 1등 당첨을 기대할 수 있을까요? 
+          평소 알고 지내던 사람들과 시작한 첫 웹 개발 프로젝트입니다. 
+          현재 많은 웹 사이트에서 자동 로또 번호 생성기를 제공하고 있지만 상업성이 짙은 느낌입니다. 
+          기존 웹사이트와는 다르게 파스텔 톤 디자인을 채택하여 장난감 같은 편안한 분위기를 연출합니다.
+          `}
           subDescript={lottoSub()}
           service="랜덤한 숫자 6자리 출력, 지난 회차 당첨 번호 보여주기"
           gitAddress="github.com/EunSungMoon/lottery"
@@ -130,7 +137,9 @@ export default function Project() {
             contentpage,
             mainpage
           ]}
-          mainDescript={`똑똑하게 관리해주는 투두리스트 똑똑이`}
+          mainDescript={`웹 개발 입문시 진행하는 필수 코스인  To Do 리스트 입니다. 
+          회원 기능을 추가하여 로그인 된 사용자 본인의 내용만 관리할 수 있습니다. 
+          모바일에서도 원활한 사용이 가능한 반응형 웹에 초점을 맞추었습니다. `}
           subDescript={smartySub()}
           service="투두리스트, 중요도 관리, 캘린더, 일정 반복"
           gitAddress="github.com/EunSungMoon/smarty"
@@ -148,7 +157,10 @@ export default function Project() {
             contentpage,
             mainpage
           ]}
-          mainDescript={`구멍가게 재고관리 시스템`}
+          mainDescript={`아직까지도 많은 곳에선 재고 관리를 수동으로 진행합니다. 
+          이러한 문제점에 착안하여 소규모 식재료 납품 사업장에서도 전산화된  재고관리가 가능하게끔 도와주는 웹 사이트 입니다. 
+          유통기한과 출고일을 기점으로 사용자는 매출 현황과 폐기 품목들을 확인 할 수 있습니다. 
+          육류, 채소루 등 종류별로 재고현황을 토대로 사장님들은 매입 계획을 세우고 유통기한이 지나 버려지는 품목을 최소화하여 경제적인 운영이 가능합니다.`}
           subDescript={marketSub()}
           service="제품 등록, 일일 매출 관리, 재고량 현황 파악 등등"
           gitAddress="github.com/EunSungMoon/marketmanagement"
