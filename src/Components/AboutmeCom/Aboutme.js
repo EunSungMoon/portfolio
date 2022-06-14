@@ -8,10 +8,7 @@ export default function Aboutme() {
     <section id='aboutme'>
       <div className='container aboutmeWrap'>
         <h1 className='h1'>안녕하세요.<br />
-          궁금한게 많은<br />
-          꼼꼼한<br />
           프론트엔드 개발자 문은성입니다.<br />
-          
         </h1>
         <Link
           to='skills'

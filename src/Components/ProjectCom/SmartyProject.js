@@ -8,12 +8,10 @@ export default function SmartyProject() {
   const smartySub = () => (
     <p>
       <span className='colorRed'>typescript로 개발한 프로젝트입니다.</span>
-      도입하게 된 이유는 호기심이었다.
       변수의 타입을 지정하는 것부터 난관이었다.
-      바닐라js를 사용했을 때 넘어간 문제들이 보였고, 해결하는 재미가 쏠쏠했다.
-      아직은 typescript의 다양한 기능들을 활용하지 못해 아쉬웠다. 더 공부해서 활용을 더 해보고 싶다.
+      평소 아무런 기준 없이 변수나 이벤트들을 설정했다면 typescript의 딱딱한 설정은 일관된 코드 작성하는데 도움이 되었다.
       <br /><br />
-      캘린더는 장 많이 사용하던 moment.js대신 dayjs를 사용했다. 장단점을 고려했을 때 dayjs를 선택하는 것이 좋을 듯 했다.
+      캘린더는 moment.js 대신 dayjs를 사용했다. 용량과 성능을 동시에 비교했을대 dayjs를 선택하는 것이 더 효율적이라 생각했다.
       <br /><br />
       리스트의 중요도를 높음, 중간, 낮음 3단계로 나누어 서로다른 색을 사용하여 포인트를 강조했다.
       월간 보기, 일간 보기 등의 기능을 추가하여 월 단위, 일 단위로도 To Do 리스트를 확인 할 수 있도록 했다.
@@ -36,7 +34,7 @@ export default function SmartyProject() {
         모바일에서도 원활한 사용이 가능한 반응형 웹에 초점을 맞추었습니다. `
       }
       subDescript={smartySub()}
-      service="투두리스트, 중요도 관리, 캘린더, 일정 반복"
+      service="투두리스트, 중요도 관리, 캘린더"
       gitAddress="github.com/EunSungMoon/smarty"
       domain="곧 생길 예정"
       front="React, typescript, sass, Bootstrap"
