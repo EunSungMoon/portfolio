@@ -12,16 +12,16 @@ import friendsProfile from './projectImg/friendsProfile.png'
 export default function FriendsProject() {
   const friendsSub = () => (
     <p>
-      원래 프렌즈는 순수 자바스크립트로 개발을 하다가 react로 전환시켰다.
-      왜 많은 사람들이 react를 사용하는지 알고싶었기 때문이다.
-      순수 자바스크립트보다 편리하게 상태관리를 할 수 있다는 장점이 있다. 
+      원래 프렌즈는 순수 자바스크립트로 개발을 하다가 react로 전환시켰습니다.
+      왜 많은 사람들이 react를 사용하는지 알고싶었기 때문입니다.
+      순수 자바스크립트보다 편리하게 상태관리를 할 수 있다는 장점이 있습니다. 
       <br /><br />
-      react를 처음 사용하는 만큼 친해는것에 목표를 두었다.
-      <span className='colorRed'> useState, useEffect를 사용하는 것, 비동기 처리되는 것은</span> 어려웠지만 목표대로 react와 친해지기는 성공했다.
+      react를 처음 사용하는 만큼 친해는것에 목표를 두었습니다.
+      <span className='colorRed'> useState, useEffect를 사용하는 것, 비동기 처리되는 것은</span> 어려웠지만 목표대로 react와 친해지기는 성공했습니다.
       <br /><br />
-      api를 사용해보면서 백엔드 개발자와의 협업방법을 배울 수 있었다. 
+      api를 사용해보면서 백엔드 개발자와의 협업방법을 배울 수 있었습니다. 
       <br />
-      앞으로 해결해 나갈 숙제들이 많지만 뿌듯하고 즐거웠던 프로젝트였다.
+      앞으로 해결해 나갈 숙제들이 많지만 뿌듯하고 즐거웠던 프로젝트였습니다.
     </p>
   )
   return (
@@ -39,8 +39,8 @@ export default function FriendsProject() {
         friendsProfile
       ]}
       mainDescript={
-        `미용사들과 미용봉사가 필요한 사람들을 연결하는 봉사활동 매칭 플랫폼이다. 
-        미용사들이 휴일에 봉사활동을 하고 싶어하지만 마땅한 기관이나 장소를 찾지 못하는 어려움에 착안했다.
+        `미용사들과 미용봉사가 필요한 사람들을 연결하는 봉사활동 매칭 플랫폼입니다. 
+        미용사들이 휴일에 봉사활동을 하고 싶어하지만 마땅한 기관이나 장소를 찾지 못하는 어려움에 착안했습니다.
       `}
       subDescript={friendsSub()}
       service="봉사 모집 게시글 작성, 수정, 삭제하기"
