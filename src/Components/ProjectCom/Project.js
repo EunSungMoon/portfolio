@@ -5,8 +5,6 @@ import FriendsProject from './FriendsProject';
 import SmartyProject from './SmartyProject';
 import LottolottoProject from './LottolottoProject';
 import MarketProject from './MarketProject';
-import PortfoiloProject from './PortfoiloProject';
-
 
 export default function Project() {
   return (
@@ -19,7 +17,7 @@ export default function Project() {
         <LottolottoProject />
         <SmartyProject />
         <MarketProject />
-        <PortfoiloProject />
+        {/* <PortfoiloProject /> */}
       </div>
     </section>
   )
