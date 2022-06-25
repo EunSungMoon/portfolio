@@ -1,5 +1,9 @@
 import ProjectCom from './ProjectContent';
-import friendsLogin from './projectImg/friendsLogin.png'
+import marketTable from './projectImg/marketTable.png'
+import marketEnroll from './projectImg/marketEnroll.png'
+import marketEdit from './projectImg/marketEdit.png'
+import marketRevenue from './projectImg/marketRevenue.png'
+import marketSearch from './projectImg/marketSearch.png'
 
 export default function MarketProject() {
   const marketSub = () => (
@@ -16,7 +20,11 @@ export default function MarketProject() {
       title="채미왔소"
       period="2022.04 - 2022.05 (3인 프로젝트)"
       projectImage={[
-        friendsLogin
+        marketTable,
+        marketEnroll,
+        marketEdit,
+        marketRevenue,
+        marketSearch
       ]}
       mainDescript={`수동 재고관리의 문제점에 착안하여 소규모 식료품 사업장에서도 전산화된 재고관리가 가능하게끔 도와주는 웹 사이트 입니다. 
     사용자는 매출 현황과 폐기 품목들을 확인 할 수 있습니다. 
