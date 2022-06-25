@@ -45,7 +45,7 @@ export default function FriendsProject() {
       subDescript={friendsSub()}
       service="봉사 모집 게시글 작성, 수정, 삭제하기"
       gitAddress="github.com/EunSungMoon/friends"
-      domain="곧 생길 예정"
+      domain="friends.moon-portfolio.co.kr"
       front="React, javascript, sass, Bootstrap"
       back="Django"
       deployment="AWS, nginx"

@@ -36,7 +36,7 @@ export default function SmartyProject() {
       subDescript={smartySub()}
       service="투두리스트, 중요도 관리, 캘린더"
       gitAddress="github.com/EunSungMoon/smarty"
-      domain="곧 생길 예정"
+      domain="smarty.moon-portfolio.co.kr"
       front="React, typescript, sass, Bootstrap"
       back="Django"
       deployment="AWS, nginx"

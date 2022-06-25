@@ -48,7 +48,9 @@ export default function ProjectCom(props) {
               props.domain === '' ? null :
                 <div className='descriptWrapper'>
                   <div className='projectLabel'>도메인</div>
-                  <span className='projectValue'>{props.domain}</span>
+                  <span className='projectValue'>
+                    <a href={`http://${props.domain}`} target='blank'>{props.domain}</a>
+                  </span>
                 </div>
             }
 

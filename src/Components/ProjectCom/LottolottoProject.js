@@ -29,7 +29,7 @@ export default function LottolottoProject() {
       subDescript={lottoSub()}
       service="랜덤한 숫자 6자리 출력, 지난 회차 당첨 번호 보여주기"
       gitAddress="github.com/EunSungMoon/lottery"
-      domain="곧 생길 예정"
+      domain="lottolotto.moon-portfolio.co.kr"
       front="React, javascript, sass, Bootstrap"
       back="Django"
       deployment="AWS, nginx"

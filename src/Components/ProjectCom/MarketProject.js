@@ -32,7 +32,7 @@ export default function MarketProject() {
       subDescript={marketSub()}
       service="제품 등록, 일일 매출 관리, 재고량 현황 파악 등등"
       gitAddress="github.com/EunSungMoon/marketmanagement"
-      domain="곧 생길 예정"
+      domain="market.moon-portfolio.co.kr"
       front="React, typescript, sass, Bootstrap, mui"
       back="Django"
       deployment="AWS, nginx"
