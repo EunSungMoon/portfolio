@@ -18,7 +18,7 @@ export default function MarketProject() {
   return (
     <ProjectCom
       title="채미왔소"
-      period="2022.04 - 2022.05 (3인 프로젝트)"
+      period="2022.04 - 2022.06 (3인 프로젝트)"
       projectImage={[
         marketTable,
         marketEnroll,

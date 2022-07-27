@@ -14,7 +14,7 @@ export default function LottolottoProject() {
   return (
     <ProjectCom
       title="lottolotto"
-      period="2021.01.25-2022.02.15 (3인 프로젝트)"
+      period="2022.01.25-2022.02.15 (3인 프로젝트)"
       projectImage={[
         lottolottoMain1,
         lottolottoMain2
